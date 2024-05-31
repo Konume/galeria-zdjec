@@ -1,0 +1,7 @@
+{
+  "name": "galeria-zdjec",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
