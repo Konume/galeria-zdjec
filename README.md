@@ -1,89 +1,64 @@
-# Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+# Galeria Zdjęć
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
+## Opis
 
+Projekt "Galeria Zdjęć" to aplikacja umożliwiająca przechowywanie, przeglądanie i zarządzanie kolekcją zdjęć. Celem aplikacji jest stworzenie prostego i intuicyjnego systemu do organizowania zdjęć, które mogą być przesyłane, sortowane, filtrowane i wyświetlane w różnych formatach.
 
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Funkcjonalności
 
+- Przesyłanie zdjęć do aplikacji.
+- Wyświetlanie zdjęć w formie galerii z miniaturami.
+- Sortowanie i filtrowanie zdjęć według daty, tagów, rozdzielczości i innych kryteriów.
+- Dodawanie i edytowanie opisów oraz tagów zdjęć.
+- Możliwość usuwania zdjęć z kolekcji.
 
-## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+## Wymagania
 
+- Java 11+
+- Maven (do zarządzania zależnościami)
+- Serwer aplikacji (np. Apache Tomcat lub Spring Boot)
+- Relacyjna baza danych (np. MySQL, PostgreSQL, H2)
 
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+## Instalacja
 
+1. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/Konume/galeria-zdjec.git
+   cd galeria-zdjec
+   ```
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+2. Skonfiguruj bazę danych:
+   - Utwórz bazę danych o nazwie `galeria`.
+   - Wprowadź odpowiednie dane logowania w pliku `application.properties`.
 
+3. Zbuduj projekt za pomocą Mavena:
+   ```bash
+   mvn clean install
+   ```
 
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+4. Uruchom aplikację:
+   ```bash
+   mvn spring-boot:run
+   ```
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+## Użycie
 
+1. Otwórz aplikację w przeglądarce pod adresem [http://localhost:8080](http://localhost:8080).
+2. Przesyłaj zdjęcia za pomocą dostępnego interfejsu.
+3. Używaj opcji sortowania, filtrowania oraz zarządzania zdjęciami, aby dostosować galerię do swoich potrzeb.
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+## Dokumentacja
 
-`write-your-code-here`
+Szczegółowe informacje na temat API, struktury bazy danych oraz diagramów UML znajdują się w katalogu `docs` w repozytorium.
 
+## Wkład
 
-## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Zachęcamy do zgłaszania sugestii oraz błędów poprzez system zgłoszeń (Issues). Pull requesty są mile widziane!
 
+## Licencja
 
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+Projekt "Galeria Zdjęć" jest licencjonowany na warunkach licencji MIT. Szczegóły znajdują się w pliku [LICENSE](LICENSE).
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+---
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
-
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Dziękujemy za zainteresowanie projektem i zapraszamy do jego rozwijania oraz korzystania!
